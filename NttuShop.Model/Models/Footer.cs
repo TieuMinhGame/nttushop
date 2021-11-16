@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace NttuShop.Model.Models
 {
     [Table("Footers")]
-    internal class Footer
+    public class Footer
     {
         [Key]
         public string ID { set; get; }
