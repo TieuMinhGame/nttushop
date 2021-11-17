@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NttuShop.Model.Models
@@ -8,6 +9,7 @@ namespace NttuShop.Model.Models
     {
         [Key]
         [MaxLength(50)]
+        [Column(TypeName = "varchar")]
         public string ID { set; get; }
 
         [MaxLength(50)]
