@@ -1,4 +1,5 @@
 ﻿using NttuShop.Model.Abstract;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -36,5 +37,6 @@ namespace NttuShop.Model.Models
 
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { set; get; }
+        public virtual IEnumerable<PostTag> PostTags { set; get; }
     }
 }

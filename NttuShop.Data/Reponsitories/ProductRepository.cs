@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NttuShop.Data.Reponsitories
 {
-    public interface IProductRepository
+    public interface IProductRepository : IRepository<Product>
     {
 
     }
